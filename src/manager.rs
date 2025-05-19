@@ -5,7 +5,7 @@ use std::collections::HashMap;
 use tokio::fs::File;
 use tokio::io::AsyncReadExt;
 
-
+#[derive(Debug, Clone)]
 pub struct Database {
     pub pool: SqlitePool,
 }
